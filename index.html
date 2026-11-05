@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="body">
+        <div class="form">
+            <form novalidate>
+                <p>
+                <label for="mail">
+                    <span>Enter Email Address</span>
+                </label>
+                <input id="mail" type="email" required>
+                <span id="mailerror" aria-live="polite"></span>
+                </p>
+
+                <p>
+                <label for="country">
+                    <span>Enter Country</span>
+                </label>
+                <input type="text" id="country" required>
+                <span id="countryerror" aria-live="polite"></span>
+                </p>
+
+                <p>
+                <label for="postalCode">
+                    <span>Enter Postal code</span>
+                </label>
+                <input type="number" id="postalCode">
+                <span id="postalerror" aria-live="polite"></span>
+                </p>
+
+                <p>
+                <label for="password">
+                    <span>Enter password</span>
+                </label>
+                <input type="password" id="password" required  minlength="8" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}">
+                <span id="passworderror" aria-live="polite"></span>
+                </p>
+
+                <p>
+                <label for="confirmPassword">
+                    <span>Confirm Password</span>
+                </label>
+                <input type="password" id="confirmPassword" required>
+                <span id="confirmpassworderror" aria-live="polite"></span>
+                </p>
+                <p>
+                    <button>Submit</button>
+                </p>
+            </form>
+
+        </div>
+
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>

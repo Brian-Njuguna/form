@@ -1,0 +1,32 @@
+form{
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid aqua;
+}
+input {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+}
+#mailerror {
+    border: 2px solid red;
+    background-color: white;
+    color: red;
+}
+#countryerror{
+    border: 2px solid red;
+    background-color: white;
+    color: red;
+}
+#passworderror {
+    border: 2px solid red;
+    background-color: white;
+    color: red;
+}
+#confirmpassworderror{
+    border: 2px solid red;
+    background-color: white;
+    color: red;
+}
